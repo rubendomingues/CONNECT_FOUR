@@ -77,7 +77,7 @@ public class Main{
       }
       MenuAlg();
       int alg = scan.nextInt();
-      while(alg!=1 && alg!=2 && alg!=3){
+      while(alg!=1 && alg!=2){
         MenuAlg();
         alg = scan.nextInt();
       }
@@ -125,10 +125,6 @@ public class Main{
             pos=jogada.movimento;
             passos=jogada.nos;
           }
-          else if(alg==3){
-            System.out.println("Não está a funcionar.");
-            return;
-          }
           long tempoFinal = System.currentTimeMillis();
           jogo.printMatriz();
           System.out.println("Computador:");
@@ -165,10 +161,6 @@ public class Main{
             jogo.jogar(jogador,jogada.movimento);
             pos=jogada.movimento;
             passos=jogada.nos;
-          }
-          else if(alg==3){
-            System.out.println("Não está a funcionar.");
-            return;
           }
           jogo.printMatriz();
           long tempoFinal = System.currentTimeMillis();
@@ -295,10 +287,6 @@ public class Main{
         System.out.println("EMPATE!");
         return;
       }
-      else if(alg==3){
-        System.out.println("Não está a funcionar.");
-        return;
-      }
     }
 
 
@@ -332,7 +320,6 @@ public class Main{
     System.out.println("Selecione o algoritmo do computador:");
     System.out.println("1) Minimax");
     System.out.println("2) Alpha-beta");
-    System.out.println("3) Monte Carlo tree search (MCTS)");
   }
 
 }

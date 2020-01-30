@@ -1,5 +1,5 @@
 CONNECTED FOUR
-CONNECTED FOUR game solved with 3 algoritms:
+CONNECTED FOUR game solved with 2 algoritms:
 MiniMax;
 AlphaBeta;
-MonteCarlo;
+
